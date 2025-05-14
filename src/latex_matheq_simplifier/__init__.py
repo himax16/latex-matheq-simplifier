@@ -13,6 +13,7 @@ def replace_equations(text: str, placeholder: str = '[EQUATION]') -> str:
         r'\$(.+?)\$',
         r'\\begin\{equation\*?\}(.+?)\\end\{equation\*?\}',
         r'\\begin\{align\*?\}(.+?)\\end\{align\*?\}',
+        r'\\eqref\{(.+?)\}',
     ]
     for pattern in patterns:
         text = re.sub(pattern, placeholder, text, flags=re.DOTALL)
