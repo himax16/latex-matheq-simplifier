@@ -1,0 +1,6 @@
+.pytest_cache
+.venv
+.vscode
+__pycache__
+*.py[cod]
+dist

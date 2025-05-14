@@ -1,0 +1,19 @@
+[project]
+name = "latex-matheq-simplifier"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Himawan Winarto", email = "himawan@winarto.net" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "pyqt5>=5.15.11",
+]
+
+[project.scripts]
+latex-matheq-simplifier = "latex_matheq_simplifier:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
